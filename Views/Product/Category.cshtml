@@ -1,0 +1,10 @@
+
+@model IEnumerable<Northwind.Models.Category>
+
+<div class="bg-primary m-1 p-1 text-white"><h4>Categories</h4></div>
+<ul>
+  @foreach (Northwind.Models.Category category in Model)
+  {
+    <li><strong>@category.CategoryName</strong> - @category.Description</li>
+  }
+</ul>
