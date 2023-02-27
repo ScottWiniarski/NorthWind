@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 
-namespace Northwind.Models
-{
+// namespace Northwind.Models
+// {
     public class Category
     {
         public int CategoryId { get; set; }
@@ -9,4 +9,4 @@ namespace Northwind.Models
         public string Description { get; set; }
         public ICollection<Product> Products { get; set; }
     }
-}
+// }
