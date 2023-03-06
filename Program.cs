@@ -14,6 +14,7 @@ builder.Services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(
 var app = builder.Build();
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseRouting();
 app.MapControllerRoute(
     name: "default",
