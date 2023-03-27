@@ -24,6 +24,12 @@ $(function(){
       $("#code").html($(this).data("code"));
       $('#toast').toast({ autohide: false }).toast('show');        
   });
+
+  $('.customerSubmit').on('click', function(e) {
+    e.preventDefault();
+
+    console.log("Customer is submitting");
+  });
   
   $(document).on('keyup', function(e) {
       if(e.which == 27) {

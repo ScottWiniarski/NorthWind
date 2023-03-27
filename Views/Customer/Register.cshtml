@@ -1,0 +1,35 @@
+@model Customer
+
+<div class="bg-primary m-1 p-1 text-white"><h4>Add Customer</h4></div>
+<div class="container container-fluid">
+    <form method="post">
+        <div asp-validation-summary="All"></div>
+    <label asp-for="@Model.CompanyName">Company Name</label>
+    <input asp-for="@Model.CompanyName" placeholder="Company Name"/>
+    <br>
+    <label asp-for="@Model.Address"></label>
+    <input asp-for="@Model.Address" placeholder="Address"/>
+    <br>
+    <label asp-for="@Model.City"></label>
+    <input asp-for="@Model.City" placeholder="City">
+    <br>
+    <label asp-for="@Model.Region"></label>
+    <input asp-for="@Model.Region" placeholder="Region">
+    <br>
+    <label asp-for="@Model.PostalCode"></label>
+    <input asp-for="@Model.PostalCode" placeholder="Postal Code">
+    <br>
+    <label asp-for="@Model.Country"></label>
+    <input asp-for="@Model.Country" placeholder="Country">
+    <br>
+    <label asp-for="@Model.Phone"></label>
+    <input asp-for="@Model.Phone" placeholder="Phone">
+    <br>
+    <label asp-for="@Model.Fax"></label>
+    <input asp-for="@Model.Fax" placeholder="Fax">
+    <br>
+    <br>
+    <button type="submit">Add Customer</button>
+    </form>
+</div>
+    
